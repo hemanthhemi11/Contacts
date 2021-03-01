@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width= "match_parent"
+        android:layout_height= "wrap_content"
+        android:padding="10dp">
+        <EditText
+            android:id= "@+id/contactName"
+            android:layout_width= "match_parent"
+            android:layout_height= "wrap_content"
+            android:hint= "Contact name"
+            android:inputType= "text"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <EditText
+            android:id= "@+id/contactNumber"
+            android:layout_width= "match_parent"
+            android:layout_height= "wrap_content"
+            android:hint= "Contact number"
+            android:inputType= "number"
+            android:textSize="15sp"
+            android:layout_below="@+id/contactName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width= "match_parent"
+            android:layout_height= "wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick= "addContact"
+            android:text= "ADD"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/contactNumber"/>
+    </RelativeLayout>
